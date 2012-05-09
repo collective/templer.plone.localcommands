@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.1adev (unreleased)
+0.1a-dev (unreleased)
 --------------------
 
-- Package created using zopeskel
+- Package created using templer
   [Cris Ewing]
