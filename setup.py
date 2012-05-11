@@ -56,5 +56,6 @@ setup(name='templer.plone.localcommands',
       # -*- Entry points: -*-
       [templer.templer_sub_template]
       contenttype = templer.plone.localcommands.archetype:ContentType
+      schema_field = templer.plone.localcommands.archetype:ATSchemaField
       """,
       )
