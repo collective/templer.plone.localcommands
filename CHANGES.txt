@@ -4,5 +4,13 @@ Changelog
 0.1a-dev (unreleased)
 --------------------
 
+- Port contenttype and schema_field local command from zopeskel archetype 
+  local commands
+  [cewing]
+
+- Port BrowserView and BrowserLayer local commands from zopeskel plone local 
+  commands
+  [cewing]
+
 - Package created using templer
   [Cris Ewing]
