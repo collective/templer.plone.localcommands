@@ -69,4 +69,4 @@ GitHub_.
 
 .. _templer.plone: http://pypi.python.org/pypi/templer.plone
 .. _PasteScript: http://pythonpaste.org/script/
-.. _GitHub: http://github.com/collective/templer.plone.localcommands
+.. _GitHub: http://github.com/collective/templer.plone.localcommands/issues
