@@ -55,8 +55,8 @@ setup(name='templer.plone.localcommands',
       entry_points="""
       # -*- Entry points: -*-
       [templer.templer_sub_template]
-      contenttype = templer.plone.localcommands.archetype:ContentType
-      schema_field = templer.plone.localcommands.archetype:ATSchemaField
+      at_contenttype = templer.plone.localcommands.archetype:ContentType
+      at_schema_field = templer.plone.localcommands.archetype:ATSchemaField
       browserview = templer.plone.localcommands.plone:View
       browserlayer = templer.plone.localcommands.plone:BrowserLayer
       """,
