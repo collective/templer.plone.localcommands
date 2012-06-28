@@ -37,7 +37,7 @@ class BrowserLayer(PloneSubTemplate):
     summary = "A Plone browserlayer"
 
     vars = [
-        var('interface_name', 
+        var('interface_name',
             'Interface name for the browserlayer',
             default="IMyPackageBrowserLayer"),
         var('layer_name',
@@ -72,3 +72,30 @@ class BrowserLayer(PloneSubTemplate):
         for free in the vars argument
         """
         vars['interface_filename'] = vars['layer_name'].lower() + 'layer'
+
+
+class Portlet(PloneSubTemplate):
+    """
+    A Plone portlet skeleton
+    """
+    _template_dir = 'templates/plone/portlet'
+    summary = "A Plone Portlet"
+
+    vars = [
+      var('portlet_name', 'Portlet name (human readable)',
+          default="Example portlet"),
+      var('portlet_type_name', 'Portlet type name (should not contain spaces)',
+          default="ExamplePortlet"),
+      var('description', 'Portlet description', default=""),
+           ]
+
+    def pre(self, command, output_dir, vars):
+        """
+        you can use package_namespace, package_namespace2, package
+        and package_dotted_name of the parent package here. you get them
+        for free in the vars argument
+        """
+        vars['portlet_filename'] = vars['portlet_type_name'].lower()
+
+        vars['dotted_name'] = "%s.portlets" % vars['package_dotted_name']
+

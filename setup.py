@@ -59,5 +59,6 @@ setup(name='templer.plone.localcommands',
       at_schema_field = templer.plone.localcommands.archetype:ATSchemaField
       browserview = templer.plone.localcommands.plone:View
       browserlayer = templer.plone.localcommands.plone:BrowserLayer
+      portlet = templer.plone.localcommands.plone:Portlet
       """,
       )
