@@ -31,6 +31,11 @@ localcommands are available for this new package::
     you will be able to run the command `paster add --list` to see the local
     commands available for this package.
 
+.. note ::
+
+    Local commands do not work on setup.py folder level. You need to enter
+    the src/ folder itself.
+
 Follow these instructions to see the local commands you have available to you
 from the context of your ``plone_basic`` package skeleton.  You may also run
 ``paster add --list-all`` to see the full list of local commands available in
