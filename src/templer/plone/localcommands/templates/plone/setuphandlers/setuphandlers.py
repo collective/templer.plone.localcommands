@@ -7,7 +7,7 @@ class SetupVarious:
         # flag to check that we actually meant for this import step to be run.
         # The file is found in profiles/default.
 
-        if context.readDataFile('${namespace_package}.${package}') is None:
+        if context.readDataFile('${namespace_package}.${package}_various.txt') is None:
             return
 
         # Add additional setup code here
