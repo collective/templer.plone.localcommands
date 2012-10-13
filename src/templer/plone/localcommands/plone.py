@@ -32,6 +32,12 @@ class View(PloneSubTemplate):
 class UpgradeSteps(PloneSubTemplate):
     """
     An upgrade steps skeleton
+
+    TODO: make this local command available just if exists a generic profile.
+    Don't know if it is necessary
+
+    Some validators for source and destination are needed?
+    
     """
     _template_dir = 'templates/plone/upgradesteps'
     summary = "An upgrade steps skeleton"
@@ -40,10 +46,6 @@ class UpgradeSteps(PloneSubTemplate):
       var('source', 'Source',  default="*"),
       var('destination', 'Destination',  default=""),
       ]
-    # TODO: 
-# add some validators for source and destination? destination should be required
-# make this localcommand available just if exists a generic profile
-# keep things working with multiple upgradesteps (it works fine, there is a multiple comment to fix but it works)
 
     def pre(self, command, output_dir, vars):
         """
