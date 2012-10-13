@@ -41,9 +41,9 @@ class UpgradeSteps(PloneSubTemplate):
       var('destination', 'Destination',  default=""),
       ]
     # TODO: 
-# add some validators for source and destination?
+# add some validators for source and destination? destination should be required
 # make this localcommand available just if exists a generic profile
-# keep things working with multiple upgradesteps
+# keep things working with multiple upgradesteps (it works fine, there is a multiple comment to fix but it works)
 
     def pre(self, command, output_dir, vars):
         """
