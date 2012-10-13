@@ -1,4 +1,4 @@
-# -*- extra stuff goes here -*-
+#echo "#".join(['', ' -*- extra stuff goes here -*-'])#
 
 def upgrade_to_${normalized_destination}(context):
     print "Upgrading to ${destination}"
