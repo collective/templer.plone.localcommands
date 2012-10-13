@@ -1,6 +1,11 @@
 The <packagename>.po file containing language-specific translations for your
 product will go here when it is generated.
 
+For a complete example of an internationalized package, check out the maurits.i18ntalk package:
+
+https://github.com/mauritsvanrees/maurits.i18ntalk
+
+
 For more information on internationalization and the difference between the
 i18n directory and this locales directory, read here:
 
