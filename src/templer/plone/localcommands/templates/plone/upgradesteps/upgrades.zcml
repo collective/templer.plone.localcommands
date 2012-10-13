@@ -6,12 +6,18 @@
 #    <!-- -*- extra stuff goes here -*- -->
 
        
-    <gs:upgradeStep
-        title="Upgrade your.product to ${destination}"
-        description="${namespace_package}.${package} upgrade step"
+    <gs:upgradeSteps
         source="${source}"
         destination="${destination}"
-        handler=".upgrades.upgrade_to_${normalized_destination}"
-        profile="${namespace_package}.${package}:default" />
+        profile="${namespace_package}.${package}:default">
+      <gs:upgradeStep
+          title="Upgrade your.product to ${destination}"
+          description="${namespace_package}.${package} upgrade step"
+          handler=".upgrades.upgrade_to_${normalized_destination}" />
+       <!-- Put here other upgrade steps if you need
+            See:
+            http://collective-docs.readthedocs.org/en/latest/components/genericsetup.html#upgrade-steps
+       -->
+    </gs:upgradeSteps>
        
 #</configure>
