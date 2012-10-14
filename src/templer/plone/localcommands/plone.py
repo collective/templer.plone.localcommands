@@ -39,14 +39,6 @@ class SetupHandlers(PloneSubTemplate):
     vars = [
       ]
 
-#    def pre(self, command, output_dir, vars):
-#        """
-#        you can use package_namespace, package_namespace2, package
-#        and package_dotted_name of the parent package here. you get them
-#        for free in the vars argument
-#        """
-#        vars['normalized_destination'] = vars['destination'].replace('.', '_')
-
 
 class UpgradeSteps(PloneSubTemplate):
     """
