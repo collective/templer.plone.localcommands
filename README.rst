@@ -66,6 +66,12 @@ browserview
 browserlayer
   A zope BrowserLayer interface and GenericSetup registration
 
+setuphandlers
+  A setuphandlers for policy packages
+
+upgradestep
+  A portal_setup upgrade step
+
 Issues
 ======
 

@@ -7,6 +7,12 @@ Changelog
 - Port Portlet local command from zopeskel plone local commands
   [calvinhp]
 
+- Added a new upgrade step local command
+  [davidemoro]
+
+- Added a new setuphandlers local command
+  [davidemoro]
+
 1.0b1 May 10, 2012
 ------------------
 

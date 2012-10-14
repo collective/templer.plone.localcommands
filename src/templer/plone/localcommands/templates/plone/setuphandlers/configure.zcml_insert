@@ -1,0 +1,20 @@
+#<configure
+#    xmlns="http://namespaces.zope.org/zope"
+#    xmlns:five="http://namespaces.zope.org/five"
+#    xmlns:i18n="http://namespaces.zope.org/i18n"
+#    i18n_domain="${namespace_package}.${package}">
+
+# <!-- -*- extra stuff goes here -*- -->
+
+  <!-- Setup handlers -->
+  <genericsetup:importStep
+      name="${namespace_package}_${package}_handlers"
+      title="${namespace_package}.${package} handlers"
+      description=""
+      handler=".setuphandlers.setupVarious">
+          <depends name="content"/>
+          <depends name="toolset"/>
+  </genericsetup:importStep>
+
+  
+#</configure>
