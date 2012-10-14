@@ -60,7 +60,7 @@ setup(name='templer.plone.localcommands',
       browserview = templer.plone.localcommands.plone:View
       browserlayer = templer.plone.localcommands.plone:BrowserLayer
       portlet = templer.plone.localcommands.plone:Portlet
-      upgradesteps = templer.plone.localcommands.plone:UpgradeSteps
+      upgradestep = templer.plone.localcommands.plone:UpgradeStep
       setuphandlers = templer.plone.localcommands.plone:SetupHandlers
       """,
       )

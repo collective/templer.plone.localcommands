@@ -40,9 +40,9 @@ class SetupHandlers(PloneSubTemplate):
       ]
 
 
-class UpgradeSteps(PloneSubTemplate):
+class UpgradeStep(PloneSubTemplate):
     """
-    An upgrade steps skeleton
+    An upgrade step skeleton
 
     TODO: make this local command available just if exists a generic profile.
     Don't know if it is necessary
@@ -50,7 +50,7 @@ class UpgradeSteps(PloneSubTemplate):
     Some validators for source and destination are needed?
     
     """
-    _template_dir = 'templates/plone/upgradesteps'
+    _template_dir = 'templates/plone/upgradestep'
     summary = "An upgrade steps skeleton"
 
     vars = [
