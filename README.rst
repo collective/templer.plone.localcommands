@@ -70,7 +70,7 @@ setuphandlers
   A setuphandlers for policy packages
 
 upgradestep
-  An upgrade step
+  A portal_setup upgrade step
 
 Issues
 ======
