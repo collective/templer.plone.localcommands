@@ -60,5 +60,6 @@ setup(name='templer.plone.localcommands',
       browserview = templer.plone.localcommands.plone:View
       browserlayer = templer.plone.localcommands.plone:BrowserLayer
       portlet = templer.plone.localcommands.plone:Portlet
+      i18nlocale = templer.plone.localcommands.plone:I18nLocale
       """,
       )

@@ -99,3 +99,27 @@ class Portlet(PloneSubTemplate):
 
         vars['dotted_name'] = "%s.portlets" % vars['package_dotted_name']
 
+
+class I18nLocale(PloneSubTemplate):
+    """
+    A skeleton for an i18n language
+    """
+    _template_dir = 'templates/plone/i18nlocales'
+    summary = "An i18n locale directory structure"
+
+    vars = [
+      var('language_code',
+          'The iso-code of the language'),
+           ]
+
+    def pre(self, command, output_dir, vars):
+        """
+        you can use package_namespace, package_namespace2, package
+        and package_dotted_name of the parent package here. you get them
+        for free in the vars argument
+        """
+        # There is no default for language_code, because that makes no sense
+        # To accomodate testing, we introduce a default here.
+
+        language_iso_code = vars['language_code'].lower().strip()
+        vars['language_iso_code'] = language_iso_code and language_iso_code or 'nl'
